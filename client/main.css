@@ -1,0 +1,47 @@
+/* CSS declarations go here */
+Header a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+Header a, #login-buttons a {
+  text-decoration: none;
+  margin-right: 10px;
+  color:inherit;
+}
+.mdl-layout__tab
+{
+	font-size:32px;
+	lighn-height:60px;
+}
+form
+{
+	margin-left : 25%;
+}
+.homepage_button
+{
+	text-align : center;
+}
+h3
+{
+	text-align:center;
+	color: #00bcd4;
+}
+.sub_tab_bar {
+    margin-left: 55%;
+    margin-top: 20px;
+}
+
+Header a, #login-buttons a {
+     padding: 20px;
+	 font-size: 16px;
+     color: white;
+}
+.mdl-layout__header-row>* {
+   font-size: 36px !important;
+   font-style: italic;
+   color: #fff;
+   text-shadow: 0 1px white;
+line-height: 2 !important;
+   font-weight: bolder  !important;
+   box-sizing: border-box  !important;
+}
