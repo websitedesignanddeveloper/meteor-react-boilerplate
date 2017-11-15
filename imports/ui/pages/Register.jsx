@@ -72,15 +72,11 @@ render(){
 						 <input className = "mdl-textfield__input" name="cpassword" type = "password" id = "cpassword" value = {this.state.cpassword}  onChange = {this.updateState}/>
 						 <label className = "mdl-textfield__label" htmlFor = "cpassword">Cofirm Password : </label>
 					  </div>
-					   <div className = "mdl-textfield mdl-js-textfield mdl-cell--6-col  mdl-textfield--floating-label">
+					  <div className = "mdl-textfield mdl-js-textfield mdl-cell--12-col  mdl-textfield--floating-label">
 						 <div className="mdl-card__actions  mdl-cell--12-col homepage_button">
-						 <RaisedButton label="Submit" primary={true} className = "" name="submit" type = "submit" id = "btnSubmit"/>
-						  </div>
-					  </div>
-					  <div className = "mdl-textfield mdl-js-textfield mdl-cell--6-col  mdl-textfield--floating-label">
-						 <div className="mdl-card__actions  mdl-cell--12-col homepage_button">
-							<NavLink to="/"><RaisedButton label="Cancel" secondary={true} className=""/></NavLink>
-						  </div>
+							 <RaisedButton label="Submit" primary={true} className = "" name="submit" type = "submit" id = "btnSubmit"/>&nbsp;&nbsp;
+							 <NavLink to="/display"><RaisedButton label="Cancel" secondary={true} className=""/></NavLink>
+						</div>
 					  </div>
 				</form>
 			</main>

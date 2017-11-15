@@ -21,6 +21,7 @@ export default class AddItem extends React.Component{
 			 amount: '',
 			 Focusclass:'',
 		  }
+		  this.title = 'Add Item';
 	  }
 	  else
 	  {
@@ -32,7 +33,7 @@ export default class AddItem extends React.Component{
 				 amount: this.ItemData[0].amount,
 				 Focusclass:'is-dirty',
 			  }
-			  
+			this.title = 'Edit Item';  
 	  }
 	 
       this.updateState = this.updateState.bind(this);
@@ -82,7 +83,7 @@ render(){
   return (
 		<div className="mdl-layout mdl-js-layout">
 			<main className="mdl-layout__content">
-				<h3>Add Item</h3>
+				<h3>{ this.title }</h3>
 				<form className="mdl-cell--6-col" onSubmit={this.handleSubmit.bind(this)}>
 					  <div className = "mdl-textfield mdl-js-textfield mdl-cell--12-col  mdl-textfield--floating-label">
 						 <input className = "mdl-textfield__input" name="name" type = "text" id = "text1" value = {this.state.name}  onChange = {this.updateState}/>
@@ -100,16 +101,11 @@ render(){
 						 <input className = "mdl-textfield__input" name="amount" type = "text" id = "text1" value = {this.state.amount}  onChange = {this.updateState}/>
 						 <label className = "mdl-textfield__label" htmlFor = "text1">Amount : </label>
 					  </div>
-					   <div className = "mdl-textfield mdl-js-textfield mdl-cell--6-col  mdl-textfield--floating-label">
+					  <div className = "mdl-textfield mdl-js-textfield mdl-cell--12-col  mdl-textfield--floating-label">
 						 <div className="mdl-card__actions  mdl-cell--12-col homepage_button">
-						 <RaisedButton label="Submit" primary={true} className = "" name="submit" type = "submit" 
-						 id = "text1"/>
-						  </div>
-					  </div>
-					  <div className = "mdl-textfield mdl-js-textfield mdl-cell--6-col  mdl-textfield--floating-label">
-						 <div className="mdl-card__actions  mdl-cell--12-col homepage_button">
-							<NavLink to="/display"><RaisedButton label="Cancel" secondary={true} className=""/></NavLink>
-						  </div>
+							 <RaisedButton label="Submit" primary={true} className = "" name="submit" type = "submit" id = "btnSubmit"/>&nbsp;&nbsp;
+							 <NavLink to="/display"><RaisedButton label="Cancel" secondary={true} className=""/></NavLink>
+						</div>
 					  </div>
 				</form>
 			</main>
